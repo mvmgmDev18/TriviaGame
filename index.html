@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div id="splashScreen">
+        <div class="splashBox">
+            <h3>Yours truely,</h3>
+            <h1>Git Trivia!</h1>
+            <p>You have 90 seconds to answer 10 questions.</p>
+            <br/>
+            <p>Click To Start</p>
+            <button type="button" id="start-btn" class="btn btn-primary black-background white">git started</button>
+        </div>
+    </div>
+
+    <div id="answerScreen">
+        <div class="splashBox2">
+            <h2>Here are your results!</h2>
+            <hr/>
+            <p id="correctAnswers">Correct Answers: </p>
+            <p id="wrongAnswers">Incorrect Answers: </p>
+        </div>
+    </div>
+
+    <div id="timesUp">
+        <div class="wrongBox">
+            <h2 class="endTime">Times Up!</h2>
+            <hr/>
+            <p>Your Total Score:</p>
+            <p id="correctEndTime">Correct Answers: </p>
+            <p id="wrondEndTime">Incorrect Answers: </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>Git Trivia!</header>
+        <div class="row elapsedTime">Time Remaining:
+            <div id="time-remain">90</div>
+        </div>
+
+        <div class="questions">
+            <button type="button" class="btn tbn-primary black-background white" id="sub-but">Submit</button>
+        </div>
+
+    </div>
+    <script src="assets/javascript/main.js"></script>
+</body>
+
+</html>
